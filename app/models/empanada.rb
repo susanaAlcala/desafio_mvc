@@ -1,0 +1,2 @@
+class Empanada < ApplicationRecord
+end

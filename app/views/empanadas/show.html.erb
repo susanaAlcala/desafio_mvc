@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ingrediente ppal:</strong>
+  <%= @empanada.ingrediente_ppal %>
+</p>
+
+<p>
+  <strong>Ingrediente secundario:</strong>
+  <%= @empanada.ingrediente_secundario %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @empanada.cantidad %>
+</p>
+
+<%= link_to 'Edit', edit_empanada_path(@empanada) %> |
+<%= link_to 'Back', empanadas_path %>

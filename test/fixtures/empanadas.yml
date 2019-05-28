@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ingrediente_ppal: MyString
+  ingrediente_secundario: MyString
+  cantidad: 1
+
+two:
+  ingrediente_ppal: MyString
+  ingrediente_secundario: MyString
+  cantidad: 1

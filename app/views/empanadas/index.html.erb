@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Empanadas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ingrediente ppal</th>
+      <th>Ingrediente secundario</th>
+      <th>Cantidad</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @empanadas.each do |empanada| %>
+      <tr>
+        <td><%= empanada.ingrediente_ppal %></td>
+        <td><%= empanada.ingrediente_secundario %></td>
+        <td><%= empanada.cantidad %></td>
+        <td><%= link_to 'Show', empanada %></td>
+        <td><%= link_to 'Edit', edit_empanada_path(empanada) %></td>
+        <td><%= link_to 'Destroy', empanada, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Empanada', new_empanada_path %>

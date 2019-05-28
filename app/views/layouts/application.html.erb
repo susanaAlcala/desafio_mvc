@@ -31,6 +31,14 @@
         <%= link_to "Three", pages_three_path, 
         class:'nav-link' %>
       </li>
+      <li class="nav-item <%= 'active' if controller_name == 'zombies' && action_name == 'index'%>">
+        <%= link_to "Zombies", zombies_path, 
+        class:'nav-link' %>
+      </li>
+      <li class="nav-item <%= 'active' if controller_name == 'empanadas' && action_name == 'index'%>">
+        <%= link_to "Empanadas", empanadas_path, 
+        class:'nav-link' %>
+      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

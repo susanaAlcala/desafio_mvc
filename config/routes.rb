@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :empanadas
+  resources :zombies
   get 'pages/one'
   get 'pages/two'
   get 'pages/three' 
